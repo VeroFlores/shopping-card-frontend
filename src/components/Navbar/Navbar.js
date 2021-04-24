@@ -12,7 +12,6 @@ const Navbar = () => {
     fetch("https://server-shopping-cart.herokuapp.com/category")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setcategories(data);
       });
   }, []);
